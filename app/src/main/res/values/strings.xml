@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cambio de divisas</string>
+    <string name="currency_title">CAMBIO DE DIVISAS</string>
+    <string name="date">Valor de la divisa del día, 21 de marzo 2021</string>
+    <string name="amount">Cantidad</string>
+    <string name="from_currency">Desde la divisa</string>
+    <string name="to_currency">A la divisa</string>
+    <string name="change_currency">Cantida convertida</string>
+    <string name="turn_into">Convertir</string>
+</resources>
