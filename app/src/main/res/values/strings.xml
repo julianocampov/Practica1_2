@@ -5,6 +5,8 @@
     <string name="amount">Cantidad</string>
     <string name="from_currency">Desde la divisa</string>
     <string name="to_currency">A la divisa</string>
-    <string name="change_currency">Cantida convertida</string>
+    <string name="change_currency">Cantidad convertida</string>
     <string name="turn_into">Convertir</string>
+    <string name="name1">Juan Pablo Sepulveda-juanp.sepulveda@udea.edu.co</string>
+    <string name="name2">Julian Ocampo-julian.ocampov@udea.edu.co</string>
 </resources>
