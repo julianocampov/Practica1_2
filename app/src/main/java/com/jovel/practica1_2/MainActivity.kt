@@ -7,6 +7,9 @@ import com.jovel.practica1_2.databinding.ActivityMainBinding
 private const val EURO = "Euro (EUR)"
 private const val DOLAR = "Dólar Estadounidense (USD)"
 private const val PESOS = "Peso Colombiano (COP)"
+private const val preEURO = " EUR"
+private const val preDOLAR = "USD"
+private const val prePESOS = " COP"
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,31 +28,31 @@ class MainActivity : AppCompatActivity() {
 
             if (cantidad.isNotEmpty()) {
                 if (divisa1 == PESOS && divisa2 == PESOS) {
-                    mainBinding.amountTextView.text = cantidad + "  COP"
+                    mainBinding.amountTextView.text = cantidad + prePESOS
                 }
                 if (divisa1 == PESOS && divisa2 == DOLAR) {
-                    mainBinding.amountTextView.text = (cantidad.toFloat() * 0.0003).toString() + "  USD"
+                    mainBinding.amountTextView.text = (cantidad.toFloat() * 0.0003).toString() + preDOLAR
                 }
                 if (divisa1 == PESOS && divisa2 == EURO) {
-                    mainBinding.amountTextView.text = (cantidad.toFloat() * 0.0002).toString() + "  EUR"
+                    mainBinding.amountTextView.text = (cantidad.toFloat() * 0.0002).toString() + preEURO
                 }
                 if (divisa1 == DOLAR && divisa2 == DOLAR) {
-                    mainBinding.amountTextView.text = cantidad + "  USD"
+                    mainBinding.amountTextView.text = cantidad + preDOLAR
                 }
                 if (divisa1 == DOLAR && divisa2 == PESOS) {
-                    mainBinding.amountTextView.text = (cantidad.toFloat() * 3554.19).toString() + "  COP"
+                    mainBinding.amountTextView.text = (cantidad.toFloat() * 3554.19).toString() + prePESOS
                 }
                 if (divisa1 == DOLAR && divisa2 == EURO) {
-                    mainBinding.amountTextView.text = (cantidad.toFloat() * 0.84).toString() + "  EUR"
+                    mainBinding.amountTextView.text = (cantidad.toFloat() * 0.84).toString() + preEURO
                 }
-                if (divisa1 == "Euro (EUR)" && divisa2 == EURO) {
-                    mainBinding.amountTextView.text = cantidad + "  EUR"
+                if (divisa1 == EURO && divisa2 == EURO) {
+                    mainBinding.amountTextView.text = cantidad + preEURO
                 }
-                if (divisa1 == EURO && divisa2 == "Peso Colombiano (COP)") {
-                    mainBinding.amountTextView.text = (cantidad.toFloat() * 4234.29).toString() + "  COP"
+                if (divisa1 == EURO && divisa2 == PESOS) {
+                    mainBinding.amountTextView.text = (cantidad.toFloat() * 4234.29).toString() + prePESOS
                 }
-                if (divisa1 == EURO && divisa2 == "Dólar Estadounidense (USD)") {
-                    mainBinding.amountTextView.text = (cantidad.toFloat() * 1.19).toString() + "  USD"
+                if (divisa1 == EURO && divisa2 == DOLAR) {
+                    mainBinding.amountTextView.text = (cantidad.toFloat() * 1.19).toString() + preDOLAR
                 }
             }
         }
